@@ -4,24 +4,31 @@
 <head>
     <link rel="stylesheet" type="text/css" href="Frontend.css" />
     <style>
-        img {
-            width: 500px;
-            height: 500px;
-        }
+       
 
         #button {
             margin-left: 1300px;
+            margin-top:70px;
         }
 
         #info {
             position: absolute;
             top: 120px;
-            left: 1050px;
+            left: 50px;
         }
         #button{
             position:absolute;
         }
 
+        p{
+            font-size:20px;
+        }
+        #head{
+            position:absolute;
+            margin-left:600px;
+            text-shadow:10px 15px 2px #333;
+            color:blue;
+        }
     </style>
 
 
@@ -29,34 +36,44 @@
     <title>Home Page</title>
 </head>
 <body id="hom">
-            <p style="background-color:lightgreen;color:darkblue;font-family:'Times New Roman';font-size:30px;text-align:center">Doctor Online Consultation</p>
-            <div id="button">
-                <button type="button" id="but1"style="background-color:lightgreen;font-family:'Times New Roman';font-size:20px" oncick=>Sign Up</button>
-                <button type="button" id="but2" style="background-color:lightgreen;font-family:'Times New Roman';font-size:20px">Sign In</button>
-            </div>
+    <div id="head">
+        <h1>Doctor Online Consultancy</h1>
+    </div>
 
-            <div id="info">
-                <p style="font-family:'Times New Roman';font-size:20px"><b>About Info</b></p>
-                <p> Get online doctor consultation easily and securely via the Lybrate Platform where different specialized General Physicians, Ayurvedic Doctors, Dietician, Skin Specialists, Sexologists, Gynaecologists, Nutritionists, Psychiatrist are connected to offer medical assistance via a different mode of communication.</p>
-                <p>Connect instantly with a 24x7 specialist or choose to video visit a particular doctor. Start an instant consultation within 2 minutes or do video consultation at the scheduled time. Be assured that your online consultation will be fully private and secured. Experience clinic-like consultation through a video call with the doctor.</p>
-                <p>Online doctor is a term that emerged during the 2000s, used by both the media and academics, to describe a generation of physicians and health practitioners who deliver healthcare, including drug prescription, over the internet.</p>
-                <img src="img6.jpeg" style="width:450px;height:600px" />
-            </div>
+    <div id="button">
+        <button type="button" id="but1" oncick="Sign Up.html">Sign Up</button>
+        <button type="button" id="but2" onclick="Login.html">Sign In</button>
+    </div>
+
+    <div id="info">
+        <br />
+        <br />
+        <br />
+        <p style="font-family:'Times New Roman';font-size:30px;color:royalblue"><u><b>About Info :</b></u></p>
+
+        <p> Get online doctor consultation easily and securely via the Lybrate Platform where different specialized General Physicians, Ayurvedic Doctors, Dietician, Skin Specialists, Sexologists, Gynaecologists, Nutritionists, Psychiatrist are connected to offer medical assistance via a different mode of communication.</p>
+        <br />
+        
+        <p>Connect instantly with a 24x7 specialist or choose to video visit a particular doctor. Start an instant consultation within 2 minutes or do video consultation at the scheduled time. Be assured that your online consultation will be fully private and secured. Experience clinic-like consultation through a video call with the doctor.</p>
+       <br />
+        <p>Online doctor is a term that emerged during the 2000s, used by both the media and academics, to describe a generation of physicians and health practitioners who deliver healthcare, including drug prescription, over the internet.</p>
+
+    </div>
+
+    <img src="Hospital.jpg" width="100%" />
 
 
-            <img src="img2.jpeg" />
-            <img src="img3.jpeg" />
-            <img src="img4.jpeg" />
-            <img src="img5.jpeg" />
-  
-   <script>
-       document.getElementById("but1").onclick = function () {
-           location.href = "Sign Up.html";
-       };
-       document.getElementById("but2").onclick = function () {
-           location.href = "Login.html";
-       };
-   </script>
+
+
+
+    <script>
+        document.getElementById("but1").onclick = function () {
+            location.href = "Sign Up.html";
+        };
+        document.getElementById("but2").onclick = function () {
+            location.href = "Login.html";
+        };
+    </script>
 
 
 

@@ -12,6 +12,7 @@
             margin-left: 565px;
         }
     </style>
+    <script src="validation.js"></script>
 
     <title>Sign Up page</title>
    
@@ -23,7 +24,7 @@
         <table align="center">
             <tr>
                 <td><label style="font-size:18px;color:red">First Name :</label></td>
-                <td><input type="text" id="fname" placeholder="Enter Your Name" />
+                <td><input type="text" id="fname" placeholder="Enter Your Name" required" />
 
             </tr>
 
@@ -32,7 +33,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Last Name :</label></td>
-                <td><input type="text" id="lname" placeholder="Enter Your Name" />
+                <td><input type="text" id="lname" placeholder="Enter Your Name" onclick="validFname()" required />
 
             </tr>
 
@@ -42,11 +43,11 @@
             <tr>
                 <td><label style="font-size:18px;color:red">Gender :</label></td>
                 <td>
-                    <input type="radio" id="male" name="gender" value="male" /><label for=" male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" required onclick="validLname()"/><label for=" male">Male</label>
                     <br />
-                    <input type="radio" id="female" name="gender" value="female" /><label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="female" required onclick="validLname()" /><label for="female">Female</label>
                     <br />
-                    <input type="radio" id="others" name="gender" value="others" />
+                    <input type="radio" id="others" name="gender" value="others" required onclick="validLname()"/>
                     <label for="others">Others</label>
                 </td>
             </tr>
@@ -56,7 +57,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Date of Birth :</label></td>
-                <td><input type="date" id="dob" />
+                <td><input type="date" id="dob" required />
 
             </tr>
 
@@ -65,7 +66,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Contact :</label></td>
-                <td><input type="number" id="mob" placeholder="Enter Your Mobile No" />
+                <td><input type="number" id="mob" placeholder="Enter Your Mobile No" required />
 
             </tr>
             <tr>
@@ -73,7 +74,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Mail ID :</label></td>
-                <td><input type="email" id="mail" placeholder="Enter Your Mail ID" />
+                <td><input type="email" id="mail" placeholder="Enter Your Mail ID" required onclick="validMob()" />
 
             </tr>
 
@@ -83,7 +84,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Address :</label></td>
-                <td><textarea rows="5" cols="25" id="ads" placeholder="Enter your address"></textarea>
+                <td><textarea rows="5" cols="25" id="ads" placeholder="Enter your address" required onclick="validEmail()"></textarea>
 
             </tr>
             <tr>
@@ -91,7 +92,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">City :</label></td>
-                <td><input type="text" id="city" placeholder="Enter Your City" />
+                <td><input type="text" id="city" placeholder="Enter Your City" required />
 
             </tr>
 
@@ -100,7 +101,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">State :</label></td>
-                <td><input type="text" id="state" placeholder="Enter Your State" />
+                <td><input type="text" id="state" placeholder="Enter Your State" required onclick="validCity()" />
 
             </tr>
             <tr>
@@ -108,7 +109,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Country :</label></td>
-                <td><input type="text" id="country" placeholder="Enter Your Country" />
+                <td><input type="text" id="country" placeholder="Enter Your Country" required onclick="validState()" />
 
             </tr>
             <tr>
@@ -116,7 +117,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Postal code :</label></td>
-                <td><input type="number" id="pzip" placeholder="Enter Your postal code" />
+                <td><input type="number" id="pzip" placeholder="Enter Your postal code" required onclick="validCountry()" />
 
             </tr>
             <tr>
@@ -124,7 +125,7 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Password :</label></td>
-                <td><input type="password" id="psw" placeholder="Set valid password" />
+                <td><input type="password" id="psw" placeholder="Set valid password" required onclick="validPostal()" />
 
             </tr>
             <tr>
@@ -132,14 +133,14 @@
             </tr>
             <tr>
                 <td><label style="font-size:18px;color:red">Confirm Password :</label></td>
-                <td><input type="password" placeholder="Reenter Password" />
+                <td><input type="password" id="repsw" placeholder="Reenter Password" required onclick="validPassword()"/>
 
             </tr>
             <tr>
                 <td><br /></td>
             </tr>
 <tr>
-       <td colspan="2"><button type="button" style="background-color:lightgreen;font-family:'Times New Roman';font-size:20px">Register</button></td>
+       <td colspan="2"><button type="submit" id="register" onclick="validRePassword()">Register</button></td>
 
     </tr>
             </table>

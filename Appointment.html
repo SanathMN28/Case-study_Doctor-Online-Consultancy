@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Appointment</title>
+    <link rel="stylesheet" type="text/css" href="Frontend.css" />
+
+    
+</head>
+<body>
+    <p style="background-color:dodgerblue;font-family:'Times New Roman';font-size:20px">Appointment</p>
+    <br />
+    <form>
+        <table>
+            <tr>
+                <td>
+                    <label style="font-size:18px;color:red">Name :</label>
+                </td>
+                <td>
+                    <input type="text" id="name" />
+                </td>
+            </tr>
+            <tr>
+                <td><br /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-size:18px;color:red">Email ID :</label>
+                </td>
+                <td>
+                    <input type="email" id="mail" />
+                </td>
+
+            </tr>
+            <tr>
+                <td><br /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-size:18px;color:red">Contact No :</label>
+                </td>
+                <td>
+                    <input type="number" id="mob" />
+                </td>
+
+            </tr>
+            <tr>
+                <td><br /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="doctors" style="font-size:18px;color:red">Choose Doctor :</label>
+                </td>
+                <td>
+                    <select id="doctors">
+                        <option value="d1">Dr. Ananya</option>
+                        <option value="d2">Dr. Sanath M N</option>
+                        <option value="d3">Dr. Sharath Vasanth</option>
+                        <option value="d4">Dr. Anuradha</option>
+                        <option value="d5">Dr. Rohith Kumar</option>
+                        <option value="d6">Dr. Kokila</option>
+                        <option value="d6">Dr. Meera bhai</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-size:18px;color:red">Fix Appointment :</label>
+                </td>
+                <td>
+                    <input type="datetime-local" id="date" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label style="font-size:18px;color:red">Describe Issue :</label>
+                </td>
+                <td>
+                    <textarea rows="5" cols="60" placeholder=" Please enter issue in detail"></textarea>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
